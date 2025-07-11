@@ -1,0 +1,132 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #002E20;
+    color: white;
+    padding: 10px 20px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between logo, title, and nav links */
+    width: 100%; /* Full width */
+}
+
+h1 {
+    margin: 0;
+    flex-grow: 1; /* Allow the title to take up available space */
+    text-align: center; /* Center align the title */
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px; /* Space between links */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold; /* Optional: Make the text bold */
+}
+
+.nav-links a:hover {
+    color: #93CF96; /* Optional: Change color on hover */
+}
+
+main {
+    display: flex;
+    padding: 20px;
+}
+
+.content {
+    flex: 3;
+    margin-right: 20px;
+}
+
+.tips {
+    flex: 1;
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between cards */
+}
+
+.blog-card {
+    background: white; /* Ensure background is white */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s; /* Smooth hover effect */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.blog-card img {
+    background: none; 
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Round corners of the image */
+    object-fit: cover; /* Ensure the image covers the area nicely */
+}
+
+.blog-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.blog-card h3 {
+    margin: 0 0 10px; /* Margin for the title */
+}
+
+.blog-card p {
+    margin: 0 0 15px; /* Margin for the paragraph */
+}
+
+.blog-card a {
+    display: inline-block;
+    background: #027148; /* Button color */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.blog-card a:hover {
+    background: #006400; /* Darker shade on hover */
+}
+
+.blog-card img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Round corners of the image */
+    object-fit: cover; /* Ensure the image covers the area nicely */
+}
+
+h2 {
+    color: #333;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

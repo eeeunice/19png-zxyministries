@@ -1,0 +1,72 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Light background color */
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #002E20;
+}
+
+h1 {
+    color: white; /* Change the text color for better contrast */
+}
+
+main {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    padding: 20px;
+}
+
+.blog-content {
+    max-width: 800px; /* Set a maximum width for the content */
+    background-color: white; /* White background for the blog content */
+    padding: 20px; /* Padding around the content */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.blog-content img {
+    display: block;
+    margin: 20px auto; /* Center images and add margin */
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+    box-shadow: 5px 10px 18px #888888;
+    /*border-radius:5px;*/
+}
+
+h2 {
+    color: #333; /* Dark color for headings */
+}
+
+.back-button {
+    display: block;
+    margin: 20px auto; /* Center the button */
+    padding: 10px 20px; /* Add padding */
+    color: white; /* Button text color */
+    background-color: #4CAF50; /* Button background color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.back-button:hover {
+    background-color: #45a049; /* Darker shade on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333; /* Dark footer background */
+    color: white; /* White footer text */
+}

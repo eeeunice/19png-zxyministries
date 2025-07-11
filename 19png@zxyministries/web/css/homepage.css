@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 2rem;
+    color: #333333;
+    background: url('../img/Homepages/homepage.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.subheading {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+.headline {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+}
+
+.cta-btn {
+    background: linear-gradient(135deg, #32CD32, #228B22);
+    color: white;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+    background: linear-gradient(135deg, #228B22, #006400);
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #343a40;
+    text-align: center;
+}
+
+.featured-products {
+    padding: 5rem 2rem;
+    background-color: #f8f9fa;
+}
+
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+    width: 100%;
+    height:250px;
+    object-fit: contain;
+    display: block;
+}
+
+.product-info {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.product-info h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-intro {
+    font-size: 1rem;
+    color: #6c757d;
+    line-height: 1.5;
+}
+
+.view-more {
+    display: inline-block;
+    margin-top: 1rem;
+    font-weight: 600;
+    color: #12b560;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.view-more:hover {
+    color: #1b8f52;
+    text-decoration: underline;
+}
+
+.view-more-products {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.view-more-btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    color: #12b560;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.view-more-btn:hover {
+    color: #1b8f52;
+}
+
+.company-info {
+    padding: 5rem 2rem;
+    background-color: #212529;
+    color: #ffffff;
+}
+
+.info-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.info-container h2 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.inform {
+    text-align: center;
+    max-width: 800px;
+    margin: 1rem auto 4rem;
+    font-size: 1.1rem;
+    color: #adb5bd;
+    line-height: 1.6;
+}
+
+.info-block {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.info-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+.info-text {
+    flex: 1;
+}
+
+.info-text h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.info-text p {
+    font-size: 1.1rem;
+    color: #adb5bd;
+    line-height: 1.6;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .info-block {
+        flex-direction: column;
+    }
+}

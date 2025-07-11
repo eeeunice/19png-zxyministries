@@ -1,0 +1,67 @@
+/* Order status badges */
+.status-badge {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    min-width: 100px;
+}
+
+.status-processing {
+    background-color: #cff4fc; /* Light blue */
+    color: #055160;
+}
+
+.status-packaging {
+    background-color: #fff3cd; /* Light yellow */
+    color: #664d03;
+}
+
+.status-shipping {
+    background-color: #d1e7dd; /* Light green */
+    color: #0f5132;
+}
+
+.status-delivery {
+    background-color: #f8d7da; /* Light red */
+    color: #842029;
+}
+
+.status-completed {
+    background-color: #d1e7dd; /* Light green */
+    color: #0f5132;
+}
+
+.status-cancelled {
+    background-color: #f8d7da; /* Light red */
+    color: #842029;
+}
+
+
+/* Styling for dropdown options */
+#status option {
+    font-weight: 500;
+    padding: 8px;
+}
+
+#status option.status-processing {
+    background-color: #cff4fc;
+    color: #055160;
+}
+
+#status option.status-delivery {
+    background-color: #f8d7da;
+    color: #842029;
+}
+
+#status option.status-shipping {
+    background-color: #d1e7dd;
+    color: #0f5132;
+}
+
+#status option.status-cancelled {
+    background-color: #f8d7da;
+    color: #842029;
+}
