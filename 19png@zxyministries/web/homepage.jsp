@@ -7,7 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nature Glow | Premium Skincare</title>
+    <title>19png@zxyministries.org</title>
     <link rel="icon" type="image/x-icon" href="img/Logo/logo4.png"> <!--this is an icon-->
     <style>
         /* Reset and Base Styles */
