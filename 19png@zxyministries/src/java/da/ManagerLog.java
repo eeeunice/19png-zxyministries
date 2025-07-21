@@ -16,12 +16,12 @@ public class ManagerLog {
         createConnection();
     }
 
-    public ManagerLogin validateLogin(String email, String password) {
-        String queryStr = "SELECT * FROM " + tableName + " WHERE MANAGEREMAIL = ? AND MANAGERPASSWORD = ?";
+    public ManagerLogin validateLogin(String username, String password) {
+        String queryStr = "SELECT * FROM " + tableName + " WHERE MANAGERUSERNAME = ? AND MANAGERPASSWORD = ?";
         ManagerLogin manager = null;
         try {
             stmt = conn.prepareStatement(queryStr);
-            stmt.setString(1, email);
+            stmt.setString(1, username);
             stmt.setString(2, password);
             ResultSet rs = stmt.executeQuery();
             

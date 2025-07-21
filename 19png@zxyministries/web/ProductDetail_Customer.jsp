@@ -244,13 +244,6 @@ nav {
             <a href="homepage.jsp">
                 <img src="img/Logo/logo4.png" width="100" height="100" alt="Logo"/>
             </a>
-            <div class="icons">
-                <div class="icon-wrapper">
-                    <a href="UserProfile_Customer.jsp" style="text-decoration: none; color: inherit;">
-                        <i class="fas fa-user"></i>
-                    </a>
-                </div>
-            </div>
         </div>
     </header>
 

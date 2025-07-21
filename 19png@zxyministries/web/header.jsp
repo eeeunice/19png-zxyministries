@@ -23,6 +23,13 @@
                     <a href="contactus_customer.jsp" style="text-decoration: none; margin-right: 2.5rem; color: #444; font-weight: 500; transition: color 0.3s;">Contact</a>
                 </nav>
             </div>
+            <div class="icons">
+                <div class="icon-wrapper">
+                    <a href="UserProfile_Customer.jsp" style="text-decoration: none; color: inherit;">
+                        <i class="fas fa-user"></i>
+                    </a>
+                </div>
+            </div>
 
                
         </header>

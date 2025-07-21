@@ -21,8 +21,8 @@ public class ManagerLogin {
     }
 
     // Minimal constructor for login
-    public ManagerLogin(String manageremail, String managerpassword) {
-        this.manageremail = manageremail;
+    public ManagerLogin(String managerusername, String managerpassword) {
+        this.managerusername = managerusername;
         this.managerpassword = managerpassword;
     }
 

@@ -7,18 +7,18 @@ import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 
-@WebServlet("/LoginServletStaffs")
+@WebServlet("/LoginServletStaff")
 public class LoginServletStaff extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // Retrieve email and password from form
-        String email = request.getParameter("email");
+        String username = request.getParameter("username");
         String password = request.getParameter("password");
 
         // Create StaffLog object to validate login
         StaffLog staffLog = new StaffLog();
-        StaffLogin staff = staffLog.validateLogin(email, password);
+        StaffLogin staff = staffLog.validateLogin(username, password);
 
         // Check if staff exists
         if (staff != null) {

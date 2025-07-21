@@ -219,7 +219,7 @@
           <span class="input-item">
             <i class="fa fa-user-circle"></i>
           </span>
-          <input class="form-input" id="txt-input" type="text" name="email" placeholder="@Email" required>
+          <input class="form-input" id="txt-input" type="text" name="username" placeholder="username" required>
         </div>
 
         <div class="input-group">

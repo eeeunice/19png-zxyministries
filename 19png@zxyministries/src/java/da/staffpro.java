@@ -23,12 +23,12 @@ public class staffpro {
     }
 
     // Existing method to retrieve staff...
-    public static staffprofile getStaffByEmailAndPassword(String email, String password) {
+    public static staffprofile getStaffByUsernameAndPassword(String username, String password) {
         staffprofile staff = null;
-        String query = "SELECT STAFFID, STAFFNAME, STAFFEMAIL, STAFFPHONE, STAFFPASSWORD, ROLE FROM STAFF WHERE STAFFEMAIL = ? AND STAFFPASSWORD = ?";
+        String query = "SELECT STAFFID, STAFFNAME, STAFFEMAIL, STAFFPHONE, STAFFPASSWORD, ROLE FROM STAFF WHERE STAFFUSERNAME = ? AND STAFFPASSWORD = ?";
 
         try (PreparedStatement stmt = conn.prepareStatement(query)) {
-            stmt.setString(1, email);
+            stmt.setString(1, username);
             stmt.setString(2, password);
 
             try (ResultSet rs = stmt.executeQuery()) {

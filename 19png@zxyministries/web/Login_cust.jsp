@@ -207,7 +207,7 @@
       <div class="con">
         <header class="head-form">
           <h2>Log In</h2>
-          <p>Login here using your Email and password</p>
+          <p>Login here using your Username and password</p>
         </header>
 
         <!-- Display error message if login fails -->
@@ -219,7 +219,7 @@
           <span class="input-item">
             <i class="fa fa-user-circle"></i>
           </span>
-          <input class="form-input" id="txt-input" type="text" name="email" placeholder="@Email" required>
+          <input class="form-input" id="txt-input" type="text" name="username" placeholder="Username" required>
         </div>
 
         <div class="input-group">

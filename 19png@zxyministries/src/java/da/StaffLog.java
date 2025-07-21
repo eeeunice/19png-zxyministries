@@ -16,12 +16,12 @@ public class StaffLog {
         createConnection();
     }
 
-    public StaffLogin validateLogin(String email, String password) {
-        String queryStr = "SELECT * FROM " + tableName + " WHERE STAFFEMAIL = ? AND STAFFPASSWORD = ?";
+    public StaffLogin validateLogin(String username, String password) {
+        String queryStr = "SELECT * FROM " + tableName + " WHERE STAFFUSERNAME = ? AND STAFFPASSWORD = ?";
         StaffLogin staff = null;
         try {
             stmt = conn.prepareStatement(queryStr);
-            stmt.setString(1, email);
+            stmt.setString(1, username);
             stmt.setString(2, password);
             ResultSet rs = stmt.executeQuery();
             
